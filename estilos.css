@@ -164,14 +164,8 @@ footer{
 }
 
 
-.Index{
-    position: relative;
-
-}
 
 .Index .contenedorI .slide{
-    min-height: 100vh;
-    display: flex;
     flex-wrap: wrap;
     gap: 15px;
     padding: 10vh 3%;
@@ -182,14 +176,14 @@ footer{
         color: #272424;
         font-family: sans-serif;
         width: 50%;
-        height: 10%
+
     }
 .Index .contenedorI .slide .slideproject .BotonConsulta{
-    margin-top: 20%;
+  
     display: inline-block;
     background: #5f3a3a;
     color: #ffffff;
-    font-size: 2VW;
+    font-size: 2vw;
     margin-left: 2vw;
     padding: 4vh 3vw;
     border-radius: 5vw;
@@ -216,7 +210,7 @@ footer{
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .Index .contenedorI:nth-child(2) .slide{
@@ -224,7 +218,7 @@ footer{
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .Index .contenedorI:nth-child(3) .slide{
@@ -232,7 +226,7 @@ footer{
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 .Index .contenedorI .slide .slideproject{
         animation: slideContent .4s linear .4s backwards;
@@ -248,6 +242,44 @@ footer{
 
 
 /*Pagina Index*/
+/*Pagina servicios*/
+.acordeon{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .acordeon:hover {
+    background-color: #ccc;
+  }
+  
+  .acordeon:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .contenido {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+/*FIn pagina servicios*/
 /*Pagina contactate*/
 .container{
     background-color: beige;

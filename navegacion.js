@@ -24,3 +24,19 @@ function prev(){
 }
 
 setInterval(next, 7000);
+
+/*Acordeones en pagina servicios*/
+var acc = document.getElementsByClassName("acordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var contenido = this.nextElementSibling;
+    if (contenido.style.maxHeight) {
+      contenido.style.maxHeight = null;
+    } else {
+      contenido.style.maxHeight = contenido.scrollHeight + "px";
+    } 
+  });
+}
