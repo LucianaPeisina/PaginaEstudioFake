@@ -1,0 +1,297 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+/*HEADER */
+
+.headerC{
+    background-color: rgba(100, 22, 22, 0.986);
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navC .link{
+    color: rgb(248, 185, 185);;
+    text-decoration: none;
+}
+.navC .link:hover{
+    color: rgb(224, 150, 137);
+}
+
+.headerC .boton{
+    background: none;
+    border: none;
+    color: rgb(248, 185, 185);
+    text-align: center;
+    font-size: 200%;
+    display: none;
+    margin: 2%;
+}
+
+.fake{
+    margin: 1vw;
+    width: 3em;
+}
+
+.navC-lista{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.navC-item {
+    margin: 0 5vw;
+    text-transform: uppercase;
+    color: rgb(248, 185, 185);
+}
+
+
+/*mediaquaries*/
+
+@media screen and (max-width:480px){
+    .headerC .boton{
+      display: block;
+      cursor: pointer;
+    }
+    .headerC .navC{
+      width:100%;
+      height:0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      overflow: hidden;
+      align-items: center;
+      pointer-events: none;
+      transition: all .5s ease;
+    }
+    .headerC .navC.activo{
+      pointer-events: auto;
+      height: 25vh;
+      
+    }
+    .headerC .navC-lista{
+      flex-direction: column;
+    }
+    .headerC .navC-item{
+      margin: 1rem 0;
+    }
+    
+    /*COntactate*/
+    .Formulario{
+        background-color: beige;
+        grid-column: 1/-1;
+      }
+      .container .mapa{
+          grid-column: 1/-1;
+         
+      }
+       .mapa iframe{
+        width: 90%;
+       }
+
+      input.Botones{
+        width: 20%;
+        height: 7vh;
+    }
+    /*fin de contactate*/
+    /*Index*/
+    .Index .contenedorI .slide .slideproject  p{
+        font-size: 5vw;
+        color: #4f4a50;
+        font-family: sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+    }
+    .Index .contenedorI .slide .slideproject .BotonConsulta{
+        font-size: 17px;
+    }
+    @keyframes slideContent{0%
+        {
+            transform: translateY(50vw);
+        }
+        }
+    
+    /*Fin index*/
+
+
+  }
+
+
+/* HEADER*/
+
+
+
+/*cambio de tamaño en la tablet MEDIAQUARIES*/
+
+
+/*Fin de tablet*/
+
+main{
+    background-color: beige;
+    width: 100%;
+
+}
+
+footer{
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(165, 42, 42, 0.521);
+    font-size: larger;
+    text-align: center;
+}
+
+.logo-footer{
+        margin: 1vw;
+        width: 5em;
+}
+
+.Redes .RSS {
+    text-decoration: none;
+}
+
+
+.Index{
+    position: relative;
+
+}
+
+.Index .contenedorI .slide{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10vh 3%;
+    padding-bottom: 5vh;
+} 
+.Index .contenedorI .slide .slideproject  p{
+        font-size: 5vw;
+        color: #272424;
+        font-family: sans-serif;
+        width: 50%;
+        height: 10%
+    }
+.Index .contenedorI .slide .slideproject .BotonConsulta{
+    margin-top: 20%;
+    display: inline-block;
+    background: #5f3a3a;
+    color: #ffffff;
+    font-size: 2VW;
+    margin-left: 2vw;
+    padding: 4vh 3vw;
+    border-radius: 5vw;
+    border: 2% solid #5f3a3a;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.Index .contenedorI .slide .slideproject .BotonConsulta:hover{
+    background: #a16e6e;
+    border: 2% solid #b88d8d;
+    color: #ffffff;
+}
+
+.Index .contenedorI{
+    display: none;
+}
+
+.Index .contenedorI.active{
+    display: block;
+}
+
+.Index .contenedorI:nth-child(1) .slide{
+    background: url(./imagenes/judge.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.Index .contenedorI:nth-child(2) .slide{
+    background: url(./imagenes/Abogado-Caba.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.Index .contenedorI:nth-child(3) .slide{
+    background: url(./imagenes/Slide\ Pagina\ ABogados.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+.Index .contenedorI .slide .slideproject{
+        animation: slideContent .4s linear .4s backwards;
+}
+
+@keyframes slideContent{0%
+    {
+        opacity: 0;
+        transform: translateX(-50vw);
+    }
+    }
+
+
+
+/*Pagina Index*/
+/*Pagina contactate*/
+.container{
+    background-color: beige;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.container .mapa {
+    grid-template-columns: 3/4;
+    margin: 2vh 0 2vh;
+    padding-left: 2%;
+    font-size: 120%;
+ 
+}
+.mapa iframe{
+    width: 95%;
+   }
+.Formulario{
+    margin: 2vh 0 2vh;
+    padding-left: 2%;
+    width: 100%;
+}
+
+form {
+    font-size: 120%;
+}
+
+.Botones{
+    width: 5vw;
+    height: 7vh;
+}
+#textarea{
+    resize: none;
+}
+textarea,
+input, select {
+    width: 80%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #191a1f;
+    margin-top: 5px;
+}
+
+/*Pagina Contactate*/
