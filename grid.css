@@ -16,7 +16,7 @@
     }
     .headerC .navC.activo{
       pointer-events: auto;
-      height: 25vh;
+      height: 35vh;
       
     }
     .headerC .navC-lista{
@@ -44,6 +44,35 @@
         height: 7vh;
     }
     /*Index*/
+    .acordeon{
+       font-size: 20px;
+    }
+    .contenido{
+      font-size: 25px;
+    }
+    .botonesS{
+      margin: 0%;
+    }
+    .BotonConsultor{
+      display: inline-block;
+      font-size: 25px;
+      padding: 1%;
+      width: 40%;
+      text-align: center;
+      margin-bottom: 4%;
+    }
+    .BotonServicios{
+      display: inline-block;
+      font-size: 25px;
+      padding: 1%;
+      width: 40%;
+      text-align: center;
+      margin-bottom: 4%;
+    }
+   
+
+  
+    /* indez*/
 
     /*sliders*/
     .Index .contenedorI:nth-child(1) .slide{

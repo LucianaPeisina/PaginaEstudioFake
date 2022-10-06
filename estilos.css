@@ -56,81 +56,6 @@ body{
     color: rgb(248, 185, 185);
 }
 
-
-/*mediaquaries*/
-
-@media screen and (max-width:480px){
-    .headerC .boton{
-      display: block;
-      cursor: pointer;
-    }
-    .headerC .navC{
-      width:100%;
-      height:0;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      overflow: hidden;
-      align-items: center;
-      pointer-events: none;
-      transition: all .5s ease;
-    }
-    .headerC .navC.activo{
-      pointer-events: auto;
-      height: 25vh;
-      
-    }
-    .headerC .navC-lista{
-      flex-direction: column;
-    }
-    .headerC .navC-item{
-      margin: 1rem 0;
-    }
-    
-    /*COntactate*/
-    .Formulario{
-        background-color: beige;
-        grid-column: 1/-1;
-      }
-      .container .mapa{
-          grid-column: 1/-1;
-         
-      }
-       .mapa iframe{
-        width: 90%;
-       }
-
-      input.Botones{
-        width: 20%;
-        height: 7vh;
-    }
-    /*fin de contactate*/
-    /*Index*/
-    .Index .contenedorI .slide .slideproject  p{
-        font-size: 5vw;
-        color: #4f4a50;
-        font-family: sans-serif;
-        font-size: 16px;
-        color: #ffffff;
-        font-family: 'Noto Sans', sans-serif;
-        width: 70%;
-        height: 10%;
-    }
-    .Index .contenedorI .slide .slideproject .BotonConsulta{
-        font-size: 17px;
-    }
-    @keyframes slideContent{0%
-        {
-            transform: translateY(50vw);
-        }
-        }
-    
-    /*Fin index*/
-
-
-  }
-
-
 /* HEADER*/
 
 
@@ -163,7 +88,7 @@ footer{
     text-decoration: none;
 }
 
-
+/*Index pagina*/
 
 .Index .contenedorI .slide{
     flex-wrap: wrap;
@@ -239,46 +164,102 @@ footer{
     }
     }
 
-
-
-/*Pagina Index*/
-/*Pagina servicios*/
+.Servicios{
+    font-family: 'Roboto Condensed', sans-serif;    
+    text-align: center;
+    color: #5c3a3a;
+    font-size: 300%;
+}
 .acordeon{
-    background-color: #eee;
-    color: #444;
+    font-weight: bolder;
+    background-color: beige;
+    color: rgb(90, 62, 62);
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 30px;
     transition: 0.4s;
   }
   
   .active, .acordeon:hover {
-    background-color: #ccc;
+    background-color: rgb(218, 136, 136);
   }
   
   .acordeon:after {
     content: '\002B';
-    color: #777;
+    color: rgb(105, 62, 62);
     font-weight: bold;
     float: right;
     margin-left: 5px;
   }
-  
-  .active:after {
-    content: "\2212";
+  .listasS{
+    list-style-type: circle;
   }
-  
-  .contenido {
+
+  .contenido {  
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
     padding: 0 18px;
-    background-color: white;
+    background-color: beige;
+    margin-left: 2%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+.botonesS{
+   margin: 2%; 
+}
+.BotonServicios{
+    background: #be7b7b;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 1% 1vw;
+    border: 4% solid #ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.BotonServicios:hover{
+    background-color: #723c3c;;
+}
+.BotonConsultor {
+    background: #855757;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 1% 1vw;
+    border: 4% solid #ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.BotonConsultor:hover{
+    background-color: #523d3d;
+}
+
+
+/*Pagina Index*/
+/*Pagina servicios*/
+
+.TituloS{
+    text-align: center;
+    padding-top: 3%;
+
+}
+.categorias{
+    padding: 4%;
+    display: flex;
+}
+.PaginaServicios{
+
+}
+.ImagenesS{
+    width: 40%;
+}
+.ContenidoS{
+    text-align: justify;
+    width: 70%;
+}
 /*FIn pagina servicios*/
 /*Pagina contactate*/
 .container{
