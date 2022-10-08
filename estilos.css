@@ -249,18 +249,36 @@ footer{
 .categorias{
     padding: 4%;
     display: flex;
+    border-style:groove;
 }
-.PaginaServicios{
 
-}
 .ImagenesS{
     width: 40%;
 }
 .ContenidoS{
     text-align: justify;
     width: 70%;
+    padding-bottom: 3%;
+}
+
+.BotonPS{
+    background: #855757;
+    color: #ffffff;
+    margin-top: 10%;
+    font-size: 20px;
+    padding: 2%;
+    border: 4% solid #ffffff;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.BotonPS:hover{
+    background: #684f2f;
+    color: #ffffff;
 }
 /*FIn pagina servicios*/
+
 /*Pagina contactate*/
 .container{
     background-color: beige;

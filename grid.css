@@ -67,14 +67,8 @@
       padding: 1%;
       width: 40%;
       text-align: center;
-      margin-bottom: 4%;
     }
-   
-
-  
-    /* indez*/
-
-    /*sliders*/
+       /*sliders*/
     .Index .contenedorI:nth-child(1) .slide{
         height: auto;
     }
@@ -114,5 +108,39 @@
         font-family: sans-serif;
         text-decoration: none;
     }
+    /*Fin sliders*/  
+    /* FIN INDEX*/
+    /*SERVICIOS*/
+    .categorias{
+      border-style:none;
+      display: inline;
+      padding: 0;
+      
+  }
+    .BotonPS{
+      display: inline-block;
+      font-size: 23px;
+      width: 100%;
+      padding: 0 5% 0%;
+    }
+    .ImagenesS{
+      width: 100%;
+      padding: 0% 5% 20%;
+  }
+  .ContenidoS{
+    font-size: 20px;
+  }
+  .ContenidoS, .TextosS{
+      text-align: justify;
+      width: 100%;
+  } 
+    .TextosS{
+      text-align: center;
+      padding: 0 5% 10%;
+    }
+    
+
+    /*FIN DE SERVCIOS*/
+
 
 }
