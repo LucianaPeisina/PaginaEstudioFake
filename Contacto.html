@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Fake</title>
+    <link rel="shortcut icon" href="./imagenes/fake.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3d5f69751.js" crossorigin="anonymous"></script>
+    <script defer src="navegacion.js"></script>
+</head>
+<body class="body-home">
+    <header class="headerC">
+        <h1 class="h1"><a class="logo" href="index.html">
+                <img src="./imagenes/fake.jpg" alt="Logo Fake" class="fake"></a></h1>
+        
+        <button class="boton"> <i class="fa-solid fa-bars"></i></button>
+        <nav id="seleccionar" class="navC"> 
+            <ul class="navC-lista"> 
+                <li class="navC-item"><a class="link" href="index.html"> Inicio </a></li>
+                <li class="navC-item"><a class="link" href="Servicios.html"> Servicios</a></li>
+                <li class="navC-item"><a class="link" href="Sobre Nosotros.html">Sobre Nosotros</a> </li>
+                <li class="navC-item"> <a class= "link" href="Nuestros Clientes.html">Clientes</a></li>
+                <li class="navC-item"><a class= "link" href="Contacto.html">Contactanos</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="container"> 
+        <main class="Formulario" > 
+            <h2 class="Consulta"> <i class="fa-solid fa-message"></i> Consultanos </h2><br>
+            <form action="mail" method="post" target="_blank">
+             <label for="Nombre y apellido"> Nombre y Apellido* </label> <br>
+                <input class="Rectangulo" type="text" name="nombre" id="nombre" required autocomplete> <br>
+                <br><label for="telefono"> Teléfono* </label><br>
+                <input class="Rectangulo" type="tel" name="telefono" id="telefono" required placeholder="Ejemplo: +54 9 1134567891" autocomplete> <br>
+                <br><label for="mail">Mail*</label><br>
+                <input class="Rectangulo" type="email" name="mail" id="mail" required placeholder="Ejemplo@gmail.com" autocomplete> <br>
+                <br><label for="Tipo">Tipo de consulta*</label> <br>
+                <select class="Rectangulo" name="tipo" id="tipo" required>
+                <option value="1">---</option>
+                <option value="2"> Sucesion </option>
+                <option value="3"> Jubilación </option>
+                <option value="4"> Reajuste de haberes</option>
+                <option value="5"> Pension por fallecimiento</option>
+                <option value="6"> Otro </option>
+                </select> <br>
+                <br><label for="consulta">Consulta*</label><br>
+                <textarea name="consulta" id="textarea"  rows="8" required placeholder="Escriba aquí su consulta"></textarea>
+                <br>
+                <input class="Botones" type="reset" value="Borrar">
+                <input class="Botones" type="submit" value="Enviar">
+            </form>
+         </main>
+        <aside class="mapa">
+            <div class="dentro"> 
+                <h2>  <i class="fa-solid fa-envelope"></i></h2>
+                <br>
+                <p> consulta@estudiofake.com </p>
+                <br> 
+                <h3><i class="fa-solid fa-building"></i> Nuestras oficinas </h3>
+                <p> Talcahuano 123, CABA</p>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.875900752471!2d-58.38695944962371!3d-34.607299465097796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac516953527%3A0x609c82c28b3f9c86!2sTalcahuano%20123%2C%20C1013AAC%20CABA!5e0!3m2!1ses-419!2sar!4v1661709132111!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+         </aside>
+    </div>
+    <footer>
+        <div class="red"> 
+             <img src="./imagenes/fake.jpg" alt="logo" class="logo-footer"> 
+             <p id="Estudio"> Estudio Juridico Fake</p> <br>
+                 <nav class="Redes"> 
+                     <a class="RSS" target="_blank" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin"alt="linkedin" title="Linkedin"></i> 
+                      </a>
+                     <a class="RSS" target="_blank" href="https://instagram.com">
+                        <i class="fa-brands fa-instagram" alt="instagram" title="Instagram"></i> 
+
+                     </a>
+                    <a class="RSS" target="_blank" href="https://twitter.com">
+                        <i class="fa-brands fa-twitter" alt="twitter" title="Twitter"> </i>
+                     </a>
+                     <a class="RSS" target="_blank" href="https://youtube.com">
+                        <i class="fa-brands fa-youtube"alt="youtube" title="Youtube"> </i>
+                 </a>
+                </nav>
+    </div>
+            <!-- 
+        <div class="oficinas"> 
+            <h2 class="Oficina"> Nuestra oficina: </h2><br>
+            <p class="Text-oficinas"> Talcahuano 123</p><br>
+            <p class="Text-Oficinas"> CABA</p>
+        </div>
+        <div class="llamanos">
+            <h5> Contactanos</h5>
+         <p class="Text-Oficinas"> consultas@fake </p>
+        </div>--> 
+
+
+    </footer>
+    
+</body>
+</html>
