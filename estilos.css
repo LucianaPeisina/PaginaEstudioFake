@@ -253,14 +253,22 @@ footer{
 }
 
 .ImagenesS{
-    width: 40%;
-}
+    width: 100%;
+    object-fit: scale-down;
+ }
 .ContenidoS{
     text-align: justify;
     width: 70%;
     padding-bottom: 3%;
 }
 
+.Resaltado{
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;  
+    width: 100%;
+    padding-bottom: 3%;
+}
 .BotonPS{
     background: #855757;
     color: #ffffff;
