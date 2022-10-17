@@ -90,20 +90,22 @@ footer{
 
 /*Index pagina*/
 
-.Index .contenedorI .slide{
+/*Index pagina*/
+
+#Index .contenedorI .slide{
     flex-wrap: wrap;
     gap: 15px;
     padding: 10vh 3%;
     padding-bottom: 5vh;
 } 
-.Index .contenedorI .slide .slideproject  p{
+#Index .contenedorI .slide .slideproject  p{
         font-size: 5vw;
         color: #272424;
         font-family: sans-serif;
         width: 50%;
 
     }
-.Index .contenedorI .slide .slideproject .BotonConsulta{
+#Index .contenedorI .slide .slideproject .BotonConsulta{
   
     display: inline-block;
     background: #5f3a3a;
@@ -116,21 +118,21 @@ footer{
     font-family: sans-serif;
     text-decoration: none;
 }
-.Index .contenedorI .slide .slideproject .BotonConsulta:hover{
+#Index .contenedorI .slide .slideproject .BotonConsulta:hover{
     background: #a16e6e;
     border: 2% solid #b88d8d;
     color: #ffffff;
 }
 
-.Index .contenedorI{
+#Index .contenedorI{
     display: none;
 }
 
-.Index .contenedorI.active{
+#Index .contenedorI.active{
     display: block;
 }
 
-.Index .contenedorI:nth-child(1) .slide{
+#Index .contenedorI:nth-child(1) .slide{
     background: url(./imagenes/judge.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -138,7 +140,7 @@ footer{
     height: 80vh;
 }
 
-.Index .contenedorI:nth-child(2) .slide{
+#Index .contenedorI:nth-child(2) .slide{
     background: url(./imagenes/Abogado-Caba.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -146,14 +148,14 @@ footer{
     height: 80vh;
 }
 
-.Index .contenedorI:nth-child(3) .slide{
+#Index .contenedorI:nth-child(3) .slide{
     background: url(./imagenes/Slide\ Pagina\ ABogados.png);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 80vh;
 }
-.Index .contenedorI .slide .slideproject{
+#Index .contenedorI .slide .slideproject{
         animation: slideContent .4s linear .4s backwards;
 }
 
@@ -237,10 +239,8 @@ footer{
     background-color: #523d3d;
 }
 
-
 /*Pagina Index*/
 /*Pagina servicios*/
-
 .TituloS{
     text-align: center;
     padding-top: 3%;
@@ -332,5 +332,4 @@ input, select {
     border: 1.2px solid #191a1f;
     margin-top: 5px;
 }
-
 /*Pagina Contactate*/
