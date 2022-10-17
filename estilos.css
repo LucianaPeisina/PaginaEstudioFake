@@ -332,3 +332,9 @@ input, select {
     margin-top: 5px;
 }
 /*Pagina Contactate*/
+/*PAGINA SOBRE NOSOTROS*/
+
+.imagenesSobre{
+    width: 100%;
+    object-fit: scale-down;
+ }
