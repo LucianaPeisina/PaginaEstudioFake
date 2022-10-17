@@ -335,6 +335,6 @@ input, select {
 /*PAGINA SOBRE NOSOTROS*/
 
 .imagenesSobre{
-    width: 100%;
-    object-fit: scale-down;
+    width: 40%;
+ 
  }
