@@ -253,8 +253,7 @@ footer{
 }
 
 .ImagenesS{
-    width: 100%;
-    object-fit: scale-down;
+    width: 40%;
  }
 .ContenidoS{
     text-align: justify;
