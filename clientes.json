@@ -20,19 +20,19 @@
                   },
                   {
                     "id":4,
-                    "nombre":"Empresa 1",
+                    "nombre":"Empresa 4",
                     "descripcion":"Cliente importante.",
                     "imagen":"./imagenes/uno.jpg"
                   },
                   {
                     "id":5,
-                    "nombre":"Empresa 2",
+                    "nombre":"Empresa 5",
                     "descripcion":"Cliente muy importante. ",
                     "imagen":"./imagenes/uno.jpg"
                   },
                   {
                     "id":6,
-                    "nombre":"Empresa 3",
+                    "nombre":"Empresa 6",
                     "descripcion":"Otro cliente.",
                     "imagen":"./imagenes/uno.jpg"
                   }
