@@ -1,0 +1,19 @@
+{
+    "arreglo":[
+                  {   "id":1,
+                      "nombre":"Empresa 1",
+                      "descripcion":"Cliente importante.",
+                      "imagen":"./imagenes/uno.jpg"
+                  },
+                  {"id":2,
+                  "nombre":"Empresa 2",
+                  "descripcion":"Cliente muy importante. ",
+                  "imagen":"./imagenes/uno.jpg"
+                  } ,
+                  {   "id":3,
+                      "nombre":"Empresa 3",
+                      "descripcion":"Otro cliente.",
+                      "imagen":"./imagenes/uno.jpg"
+                      }
+                ]
+  }
