@@ -338,7 +338,6 @@ input, select {
 .tarjeta{
     border: 1px solid rgb(167, 167, 165);
     margin: 10px;
-    margin-bottom: auto;
     border-radius: 2%;
     width: 300px;
     background-color:rgb(229, 229, 183);
@@ -346,6 +345,7 @@ input, select {
 .cuerpo{
     padding: 10px;
     font-size:smaller;
+    margin-bottom: 50px;
     
 }
 img{
