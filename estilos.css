@@ -341,6 +341,7 @@ input, select {
     margin-bottom: auto;
     border-radius: 2%;
     width: 300px;
+    background-color:rgb(229, 229, 183);
 }
 .cuerpo{
     padding: 10px;
