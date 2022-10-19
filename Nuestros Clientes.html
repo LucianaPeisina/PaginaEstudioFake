@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio Fake</title>
+    <title>Noticias</title>
     <link rel="shortcut icon" href="./imagenes/fake.jpg" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilosclientes.css">
@@ -21,32 +22,25 @@
 
     </header>
     <main>
-        <div id="tarjetas">
-        </div>
-    </main>
-    <footer>
-              <div class="red"> 
-             <img src="./imagenes/fake.jpg" alt="logo" class="logo-footer"> 
-             <p id="Estudio"> Estudio Juridico Fake</p> <br>
-                 <nav class="Redes"> 
-                     <a class="RSS" target="_blank" href="https://linkedin.com">
-                        <i class="fa-brands fa-linkedin"alt="linkedin" title="Linkedin"></i> 
-                      </a>
-                     <a class="RSS" target="_blank" href="https://instagram.com">
-                        <i class="fa-brands fa-instagram" alt="instagram" title="Instagram"></i> 
+        <div class="Novedades">
+            <div class="filtro">
+                <h3>Noticias</h3>
+                <p>  Filtro</p>
+                <label for="">Calorias menor a :</label>
+                <input v-model="calories" type="text" id="calories">         
+                
+                <button class="btn btn-primary" v-on:click="filtro() ">Buscar</button>
+                <br>
+            </div>
+            <div id="tarjetas">
 
-                     </a>
-                    <a class="RSS" target="_blank" href="https://twitter.com">
-                        <i class="fa-brands fa-twitter" alt="twitter" title="Twitter"> </i>
-                     </a>
-                     <a class="RSS" target="_blank" href="https://youtube.com">
-                        <i class="fa-brands fa-youtube"alt="youtube" title="Youtube"> </i>
-                 </a>
-                </nav>
+            </div>
+
     </div>
-
+    </main>
+    <footer id="FooterP">
+      
     </footer>
-
     <script src="clientes.js"></script>
     <script src="./Usuales.js"></script>
     <script defer src="navegacion.js"></script>

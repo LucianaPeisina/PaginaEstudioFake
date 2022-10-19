@@ -1,0 +1,47 @@
+{
+  "noticias":[
+                {
+                  "id":1,
+                  "Tema": "Defensa del consumidor",
+                  "Titulo":"Noticia sobre consumidor",
+                  "Descripcion":"¿Qué dice la ley 24240 de defensa del consumidor? Qué dice la La Ley Nacional N.º 24240 tiene por objeto la defensa del consumidor o usuario. Se denomina “consumidor” a la persona física o jurídica que adquiere o utiliza, en forma gratuita u onerosa, bienes o servicios como destinatario final, en beneficio propio o de su grupo familiar o social.ra ",
+                  "imagen":"./imagenes/noticias/consumidor- 1.jpg"
+                },
+                {
+                  "id":2,
+                  "Tema": "Derecho previsional",
+                  "Titulo":"Noticia sobre el derecho provisional",
+                  "Descripcion":"el derecho provisional dice sobre un reciente fallo en la corte en el caso de un jubilado al que se le desconoto injustamente un haber, la camara fallo a favor de este con la justificacion de que los adultos mayores tienen una mayor proteccion al ser hipervulnerables ",
+                  "imagen":"./imagenes//noticias/Previsional-1.jpg"
+                },
+                {
+                  "id":3,
+                  "Tema": "Accidentes de transito",
+                  "Titulo":"Noticia sobre accidente de transito",
+                  "Descripcion":"Otro cliente.",
+                  "imagen":"./imagenes/noticias/accidente -1.jpg"
+                },
+                {
+                  "id": 4,
+                  "Tema": "Defensa del consumidor",
+                  "Titulo":"Fallo sobre un consumidor 2",
+                  "Descripcion":" Ley Nacional N.º 24240 tiene por objeto la defensa del consumidor o usuario. Se denomina “consumidor” a la persona física o jurídica que adquiere o utiliza, en forma gratuita u onerosa, bienes o servicios como destinatario final, en beneficio propio o de su grupo familiar o social.ra ",
+                  "imagen":"./imagenes/noticias/consumidor-2.jpg"
+                },
+                {
+                  "id":5,
+                  "Tema": "Accidentes de transito",
+                  "Titulo":"Un nuevo accidente de transito deja a la camara dictar jurisprudencia",
+                  "Descripcion":"En el pasado 8 de abril se dicto una resolucion que cambiaba los parametros de ",
+                  "imagen":"./imagenes/noticias/accidente -2.jpg"
+                },
+                {
+                  "id":3,
+                  "Tema": "Derecho previsional",
+                  "Titulo":"Los jubilados se ven perjudicados por los impuestos",
+                  "Descripcion":"Otro cliente.",
+                  "imagen":"./imagenes/noticias/previsional - 2.jpg"
+                }
+              ]
+              
+}
