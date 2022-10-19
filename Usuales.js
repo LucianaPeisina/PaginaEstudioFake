@@ -11,7 +11,7 @@ let Bnav=`
         <li class="navC-item"><a class="link" href="index.html"> Inicio </a></li>
         <li class="navC-item"><a class="link" href="Servicios.html"> Servicios</a></li>
         <li class="navC-item"><a class="link" href="Sobre Nosotros.html">Sobre Nosotros</a> </li>
-        <li class="navC-item"> <a class= "link" href="Nuestros Clientes.html">Noticias</a></li>
+        <li class="navC-item"> <a class= "link" href="Noticias.html">Noticias</a></li>
         <li class="navC-item"><a class= "link" href="Contacto.html">Contactanos</a></li>
     </ul>
 </nav> 
