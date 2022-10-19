@@ -53,4 +53,29 @@ let Pfooter=`
 ` ;
 
 document.getElementById("FooterP").innerHTML= Pfooter;
-//Probabando el JSON de clientes
+
+//API CONSUMIR
+const { createApp } = Vue
+
+const appN=createApp({
+  data() {
+    return {
+      Novedades: []
+    }
+  },
+  methods: {
+    fetchData(url) {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => { 
+                this.Novedades=data.noticias 
+            })
+
+    }
+  },
+  created(){
+  this.fetchData("./noticias.json") 
+  }
+}).mount('#appN')
+
+
