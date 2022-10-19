@@ -338,11 +338,14 @@ input, select {
 .tarjeta{
     border: 1px solid rgb(167, 167, 165);
     margin: 10px;
+    margin-bottom: auto;
     border-radius: 2%;
     width: 300px;
 }
 .cuerpo{
     padding: 10px;
+    font-size:smaller;
+    
 }
 img{
     width: 100%;
