@@ -39,7 +39,7 @@
       width: 90%;
      }
 
-  input.Botones{
+  button.formulario__btn{
       width: 20%;
       height: 7vh;
   }
@@ -68,6 +68,11 @@
     width: 40%;
     text-align: center;
   }
+  .formulario__input-error {
+    width: 80%;
+  }
+
+  
      /*sliders*/
   #Index .contenedorI:nth-child(1) .slide{
       height: auto;
@@ -144,3 +149,14 @@
 
 
 }
+@media screen and (min-width:768px) and (max-width: 1023px){ 
+ .link{
+  font-size: 56%;
+ }
+}
+ @media screen and (min-width:1024px) and (max-width: 1199px){ 
+  .link{
+   font-size: 70%;
+  }
+}
+

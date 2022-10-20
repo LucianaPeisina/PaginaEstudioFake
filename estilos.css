@@ -309,15 +309,12 @@ form {
     font-size: 120%;
 }
 
-.Botones{
-    width: 5vw;
-    height: 7vh;
-}
+
 #textarea{
     resize: none;
 }
 textarea,
-input, select {
+.formulario_input, select {
     width: 80%;
     font-weight: 400;
     padding: 8px 10px;
@@ -325,6 +322,106 @@ input, select {
     border: 1.2px solid #191a1f;
     margin-top: 5px;
 }
+/* prueba de validacion*/
+.formulario__input-error {
+	font-size: 16px;
+    color: #bb2929;
+    font-weight: bold;
+    margin-top: 1%;
+	margin-bottom: 0;
+	display: none;
+    width: 80%;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__grupo-btn-enviar{
+    display: flex;
+}
+
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+    width: 80%;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	align-items: center;
+    
+}
+
+.formulario__btn {
+    width: 10vw;
+    height: 60px;
+    margin: 3%;
+    margin-left: 0%;
+	line-height: 45px;
+	background: rgb(83, 40, 40);
+	color: #fff;
+    font-size: 70%;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	background-color:  rgb(119, 49, 49);
+}
+
+.formulario__mensaje-exito {
+	font-size: 18px;
+    width: 80%;
+	color: #232e21;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+
+
+.formulario__grupo-incorrecto .formulario__label , .formulario__grupo-incorrecto .formulario_input {
+	color: #bb2929;
+}
+
+
+
+
+
 /*Pagina Contactate*/
 /* Pagina sobre nosotros*/
 

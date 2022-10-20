@@ -22,27 +22,48 @@
     <div class="container"> 
         <main class="Formulario" > 
             <h2 class="Consulta"> <i class="fa-solid fa-message"></i> Consultanos </h2><br>
-            <form action="mail" method="post" target="_blank">
-             <label for="Nombre y apellido"> Nombre y Apellido* </label> <br>
-                <input class="Rectangulo" type="text" name="nombre" id="nombre" required autocomplete> <br>
-                <br><label for="telefono"> Teléfono* </label><br>
-                <input class="Rectangulo" type="tel" name="telefono" id="telefono" required placeholder="Ejemplo: +54 9 1134567891" autocomplete> <br>
-                <br><label for="mail">Mail*</label><br>
-                <input class="Rectangulo" type="email" name="mail" id="mail" required placeholder="Ejemplo@gmail.com" autocomplete> <br>
-                <br><label for="Tipo">Tipo de consulta*</label> <br>
-                <select class="Rectangulo" name="tipo" id="tipo" required>
-                <option value="1">---</option>
-                <option value="2"> Sucesion </option>
-                <option value="3"> Jubilación </option>
-                <option value="4"> Reajuste de haberes</option>
-                <option value="5"> Pension por fallecimiento</option>
-                <option value="6"> Otro </option>
-                </select> <br>
-                <br><label for="consulta">Consulta*</label><br>
-                <textarea name="consulta" id="textarea"  rows="8" required placeholder="Escriba aquí su consulta"></textarea>
-                <br>
-                <input class="Botones" type="reset" value="Borrar">
-                <input class="Botones" type="submit" value="Enviar">
+            <form action="" class="formC" id="formC">
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label"> Nombre y Apellido* </label> <br>
+                        <input class="formulario_input" type="text" id="nombre"  name="nombre" autocomplete>
+                        <p class="formulario__input-error">Por favor ingrese su nombre, solo se permiten letras</p>
+                </div> <br>
+                <div class="formulario__grupo" id="grupo__telefono"> 
+                    <label for="telefono" class="formulario__label"> Teléfono*</label><br>
+                        <input  class="formulario_input" type="tel" name="telefono"  id="telefono"  placeholder="Ejemplo: +54 9 1134567891" > 
+                        <p class="formulario__input-error">Por favor ingrese un teléfono valido de maximo de 14 dígitos.</p>
+
+                </div> <br>
+                <div class="formulario__grupo" id="grupo__mail">
+                    <label for="mail" class="formulario__label">Mail*</label><br>
+                        <input class="formulario_input" type="email" id="mail" name="mail" placeholder="Ejemplo@gmail.com" > 
+                        <p class="formulario__input-error">Por favor ingrese un email valido.</p>
+                </div> <br>
+                <label class="formulario__label" for="Tipo">Tipo de consulta</label> <br>
+                    <select class="Rectangulo" name="tipo" id="tipo">
+                        <option value="1">---</option>
+                        <option value="2"> Sucesion </option>
+                        <option value="3"> Jubilación </option>
+                        <option value="4"> Reajuste de haberes</option>
+                        <option value="5"> Pension por fallecimiento</option>
+                        <option value="6"> Otro </option>
+                    </select>
+                <br> <br>
+                <div class="formulario__grupo" id="grupo__consulta">
+                    <label class="formulario__label" for="consulta">Consulta*</label><br>
+                    <textarea class="formulario_input" name="consulta" id="textarea" rows="8"  placeholder="Escriba aquí su consulta"></textarea>
+                    <p class="formulario__input-error">Por favor ingrese su consulta.</p>
+                    <br>
+                </div>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button class="formulario__btn" type="reset"> Borrar </button>
+                    <button class="formulario__btn" type="submit"> Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>        
             </form>
          </main>
         <aside class="mapa">
@@ -55,7 +76,7 @@
                 <br>
                 <p> Talcahuano 123, CABA</p>
                 <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.875900752471!2d-58.38695944962371!3d-34.607299465097796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac516953527%3A0x609c82c28b3f9c86!2sTalcahuano%20123%2C%20C1013AAC%20CABA!5e0!3m2!1ses-419!2sar!4v1661709132111!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.875900752471!2d-58.38695944962371!3d-34.607299465097796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac516953527%3A0x609c82c28b3f9c86!2sTalcahuano%20123%2C%20C1013AAC%20CABA!5e0!3m2!1ses-419!2sar!4v1661709132111!5m2!1ses-419!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
          </aside>
