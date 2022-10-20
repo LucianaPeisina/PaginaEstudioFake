@@ -1,24 +1,22 @@
-let url = "noticias.json"
+let url = "clientes.json"
 let datos = [];
-
 fetch(url)
     .then(response => response.json())
     .then(data => {  // data contiene el JSON
         console.log(data)
-        datos = data.noticias
+        datos = data.arreglo
         console.log(datos)   //  3 plantas
 
 
         let cad = `<div class="container">`
 
-        for (Novedades of datos) {
+        for (producto of datos) {
             cad += `
         <div class="tarjeta">
-            <img src="${Novedades.imagen}" alt="${Novedades.nombre}">
+            <img src="${producto.imagen}" alt="${producto.nombre}">
             <div class="cuerpo">
-                <h4>${Novedades.id} - ${Novedades.Tema}</h4>
-                <p>${Novedades.Titulo}</p>
-                <p>${Novedades.Descripcion}</p>
+                <h4>${producto.id} - ${producto.nombre}</h4>
+                <p>${producto.descripcion}</p>
             </div>
         </div>   
     `
