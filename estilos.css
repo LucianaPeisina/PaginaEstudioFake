@@ -437,9 +437,13 @@ textarea,
     margin: 10px;
     border-radius: 2%;
     width: 300px;
+    background-color:rgb(229, 229, 183);
 }
 .cuerpo{
     padding: 10px;
+    font-size:smaller;
+    margin-bottom: 50px;
+    
 }
 img{
     width: 100%;
