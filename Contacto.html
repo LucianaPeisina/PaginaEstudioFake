@@ -22,7 +22,7 @@
     <div class="container"> 
         <main class="Formulario" > 
             <h2 class="Consulta"> <i class="fa-solid fa-message"></i> Consultanos </h2><br>
-            <form action="mail" method="post" target="_blank">
+            <form action="https://formsubmit.co/60e5a99ef7c3e31fd4268f796163e0fa" method="POST">
              <label for="Nombre y apellido"> Nombre y Apellido* </label> <br>
                 <input class="Rectangulo" type="text" name="nombre" id="nombre" required autocomplete> <br>
                 <br><label for="telefono"> Teléfono* </label><br>
@@ -43,6 +43,9 @@
                 <br>
                 <input class="Botones" type="reset" value="Borrar">
                 <input class="Botones" type="submit" value="Enviar">
+                <!--Personalización de API enviar mail-->
+                <input type="hidden" name="_captcha" value="false"> <!--Disable captcha-->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Thanks.html">
             </form>
          </main>
         <aside class="mapa">
