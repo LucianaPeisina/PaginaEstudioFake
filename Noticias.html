@@ -21,16 +21,17 @@
 
     </header>
     <main>
-        <div id="appN" >
+        <div id="appN" >  
+            <h2 id="HNoti">NOTICIAS</h3> 
             <div class="Novedades">
                 <div class="filtro">
-                    <h3>Noticias</h3>
-                    <p>Filtro
-                        <label>Tema:</label>
-                        <select v-model="Tema" name="Tema" id="" >
+                    <br>
+                    <p id="PNoti"> Seleccione parametros de busqueda <br><br>
+                        <label id="NTema">Tema</label> <br>
+                        <select v-model="Tema" name="Tema" id="selectN" >
                             <option  id="Tema" v-for="Tema of Temas" > {{Tema}}</option>
-                        </select> 
-                        <button class="btn btn-primary" v-on:click="filtro()">Buscar</button> 
+                        </select> <br>
+                        <button class="btn btn-primary"  id="buscarN" v-on:click="filtro()">Buscar</button> 
                     </p><br>
                 </div>
             
@@ -38,7 +39,7 @@
                     <div v-for="noticias of Novedades" class="tarjeta">
                         <img :src="noticias.imagen" alt="noticias.Titulo">
                         <div class="cuerpo">
-                            <h2>{{noticias.id}} - {{noticias.Tema}}</h2>
+                            <h3 id="H3Noticia"> {{noticias.Tema}}</h2>
                             <br>
                             <p>{{noticias.Titulo}}</p>
                             <br>
@@ -46,9 +47,9 @@
                         </div>
                     </div>   
                 </div>
-            </div> 
+            </div>  
         </div>   
-    <br>
+   
     </main>
         <footer id="FooterP">
           <!-- EN el JS-->

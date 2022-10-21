@@ -431,6 +431,16 @@ textarea,
     flex-wrap: wrap;
     width: 100%;
     text-align: center;
+    margin-left: 30px;
+}
+#HNoti{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(250, 175, 165);
+    color: rgb(88, 43, 39);
+    font-size: 35px;
+    padding: 2%;
+    text-align: center;
+    border: #8d3d3d 10px solid;
 }
 .tarjeta{
     border: 1px solid rgb(167, 167, 165);
@@ -439,6 +449,7 @@ textarea,
     width: 300px;
     background-color:rgb(229, 229, 183);
 }
+
 .cuerpo{
     padding: 10px;
     font-size:smaller;
@@ -455,5 +466,37 @@ img{
 }
 .filtro{
     width: 30%;
-    padding-right: 10%;
+    background-color: #b66060;
+    padding-left: 2%;
+    border:rgb(119, 49, 49) 7px outset;
+
+
+}
+
+#PNoti{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#buscarN{
+    font-size: 16px;
+    width: 10vw;
+    height: 60px;
+    margin: 3%;
+    margin-left: 0%;
+	line-height: 45px;
+	background: rgb(83, 40, 40);
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+    
+}
+
+#buscarN:hover{
+    background:rgb(165, 67, 50);
+
 }
