@@ -438,18 +438,24 @@ textarea,
     background-color: rgb(250, 175, 165);
     color: rgb(88, 43, 39);
     font-size: 35px;
-    padding: 2%;
     text-align: center;
     border: #8d3d3d 10px solid;
 }
 .tarjeta{
+    overflow: hidden;
     border: 1px solid rgb(167, 167, 165);
     margin: 10px;
-    border-radius: 2%;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     width: 300px;
+    cursor: default;
+    transition: all 400ms ease;
     background-color:rgb(229, 229, 183);
 }
-
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
 .cuerpo{
     padding: 10px;
     font-size:smaller;
@@ -464,6 +470,7 @@ img{
 .Novedades{
     display: flex;
 }
+
 .filtro{
     width: 30%;
     background-color: #b66060;
@@ -498,5 +505,15 @@ img{
 
 #buscarN:hover{
     background:rgb(165, 67, 50);
+}
+#H3Noticia{
+ font-size: small;
+}
+#TituloNoticia{
+    font-size: 16px ;
+    font-weight: bold;
+}
 
+#DescripcionN{
+    line-height: 1.5;
 }

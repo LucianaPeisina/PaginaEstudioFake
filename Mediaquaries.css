@@ -146,6 +146,34 @@
   
 
   /*FIN DE SERVCIOS*/
+/*PAGINA DE NOTICIAS*/
+.contenedorN{
+  display: inline-block;
+  margin: 0;
+}
+.Novedades{
+  display: inline-block;
+  
+}
+.tarjeta{
+  width: 100%;
+  margin: 0;
+  padding-top: 5% ;
+}
+.filtro{
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+}
+#buscarN{
+  width: 20%;
+  height: 7vh;
+  }
+
+.cuerpo{
+padding: 0%;
+  }
 
 
 }
