@@ -21,29 +21,33 @@
 
     </header>
     <main>
-        <div class="Novedades">
-            <div class="filtro">
-                <h3>Noticias</h3>
-                <p>  Filtro</p>
-                <label for="">Tema:</label>
-                <input v-model="calories" type="text" id="calories">         
-                
-                <button class="btn btn-primary" v-on:click="filtro() ">Buscar</button>
-                <br>
-            </div>
-            <div id="appN" class="contenedorN">
-                <div v-for="noticias of Novedades" class="tarjeta">
-                    <img :src="noticias.imagen" alt="noticias.Titulo">
-                    <div class="cuerpo">
-                        <h2>{{noticias.id}} - {{noticias.Tema}}</h2>
-                        <br>
-                        <p>{{noticias.Titulo}}</p>
-                        <br>
-                        <p>{{noticias.Descripcion}}</p>
-                    </div>
-                </div>   
-            </div>
-        </div>    
+        <div id="appN" >
+            <div class="Novedades">
+                <div class="filtro">
+                    <h3>Noticias</h3>
+                    <p>Filtro
+                        <label>Tema:</label>
+                        <select v-model="Tema" name="Tema" id="" >
+                            <option  id="Tema" v-for="Tema of Temas" > {{Tema}}</option>
+                        </select> 
+                        <button class="btn btn-primary" v-on:click="filtro()">Buscar</button> 
+                    </p><br>
+                </div>
+            
+                <div class="contenedorN">
+                    <div v-for="noticias of Novedades" class="tarjeta">
+                        <img :src="noticias.imagen" alt="noticias.Titulo">
+                        <div class="cuerpo">
+                            <h2>{{noticias.id}} - {{noticias.Tema}}</h2>
+                            <br>
+                            <p>{{noticias.Titulo}}</p>
+                            <br>
+                            <p>{{noticias.Descripcion}}</p>
+                        </div>
+                    </div>   
+                </div>
+            </div> 
+        </div>   
     <br>
     </main>
         <footer id="FooterP">

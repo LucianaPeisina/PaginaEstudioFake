@@ -61,21 +61,42 @@ const { createApp } = Vue
 const appN=createApp({
   data() {
     return {
-      Novedades: []
-    }
+      url: 'https://lucianapeisina.github.io/Noticias.json',
+      NovedadesAll: [],
+      Novedades: [],
+      Temas: [],
+      Tema: "All" // array para mostrar   
+      }
   },
   methods: {
-    fetchData(url) {
-        fetch(url)
-            .then(response => response.json())
-            .then(data => { 
-                this.Novedades=data.noticias 
-            })
+        async fetchData(url) {
+            resp = await fetch(url)
+            this.NovedadesAll = await resp.json()
+            this.Novedades = this.NovedadesAll
+        },
 
-    }
-  },
-  created(){
-  this.fetchData("./noticias.json") 
-  }
-}).mount('#appN')
+      filtro() {
+        this.Novedades = this.NovedadesAll.filter(noticias=> (noticias.Tema == this.Tema || this.Tema==="All"))
+      console.log(this.Novedades.length )
+      },
+         
+  cargarListasDesplegables() {
+          this.Temas =['All']
+          for (noticias of this.NovedadesAll) {
+            if (noticias.Tema !== '' && this.Temas.indexOf(noticias.Tema) < 0) {
+              this.Temas.push(noticias.Tema)
+            }
+          }
+         } 
+      },  
+
+    async created (){
+         await this.fetchData(this.url) 
+         this.cargarListasDesplegables()
+      }
+
+    }).mount('#appN')
+    
+    
+    
 
