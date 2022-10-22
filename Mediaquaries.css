@@ -143,10 +143,38 @@
     text-align: center;
     padding: 0 5% 10%;
   }
-  
 
   /*FIN DE SERVCIOS*/
-/*PAGINA DE NOTICIAS*/
+
+/*GPAGINA SOBRE NOSOTROS*/
+.categoriasSN{
+  border-style:none;
+  display: inline;
+  padding: 0;
+  
+}
+
+.ImagenesSN{
+  width: 100%;
+  padding: 0% 3% 10%;
+}
+.ContenidoSN{
+font-size: 20px;
+padding: 0%;
+text-align: center;
+}
+.ContenidoSN, .TextosSN{
+  text-align: justify;
+  width: 100%;
+} 
+.TextosSN{
+  text-align: center;
+  padding: 0 3% 10%;
+}
+
+
+/*FIN PAGINA SOBRE NOSOTROS
+  /*PAGINA DE NOTICIAS*/
 .contenedorN{
   display: inline-block;
   margin: 0;

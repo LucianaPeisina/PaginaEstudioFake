@@ -24,6 +24,7 @@ body{
 }
 .navC .link:hover{
     color: rgb(224, 150, 137);
+    background-color: #8d3d3d;
 }
 
 .headerC .boton{
@@ -237,15 +238,25 @@ footer{
 /*Pagina servicios*/
 .TituloS{
     text-align: center;
-    padding-top: 3%;
+    font-family: 'Times New Roman', Times, serif;
+    border: rgb(189, 78, 78) 10px solid;
+    padding: 2%;
+    color: #fff4f4;
+    background-color: #c76f6f;
+    align-items: center;
+    font-size: 40px;
 
 }
 .categorias{
     padding: 4%;
     display: flex;
     border-style:groove;
+    
 }
-
+.categorias:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
 .ImagenesS{
     width: 40%;
  }
@@ -255,13 +266,7 @@ footer{
     padding-bottom: 3%;
 }
 
-.Resaltado{
-    text-align: center;
-    font-weight: bold;
-    font-style: oblique;  
-    width: 100%;
-    padding-bottom: 3%;
-}
+
 .BotonPS{
     background: #855757;
     color: #ffffff;
@@ -294,6 +299,7 @@ footer{
     margin: 2vh 0 2vh;
     padding-left: 2%;
     font-size: 120%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  
 }
 .mapa iframe{
@@ -303,10 +309,13 @@ footer{
     margin: 2vh 0 2vh;
     padding-left: 2%;
     width: 100%;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 form {
     font-size: 120%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -424,7 +433,55 @@ textarea,
 
 /*Pagina Contactate*/
 /* Pagina sobre nosotros*/
+.TituloSN{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: rgb(146, 76, 76) 10px solid;
+    padding: 2%;
+    color: #fff4f4;
+    background-color: #b37373;
+    align-items: center;
 
+}
+.categoriasSN{
+    padding: 4%;
+    display: flex;
+    
+}
+.ImagenesSN{
+    width: 40%;
+ }
+.ContenidoSN{
+    text-align: justify;
+    width: 100%;
+    padding:  0 0 10% 10%;
+}
+#Valor{
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    padding-bottom: 3%;
+}
+
+.Resaltado{
+    font-weight: bold;
+}
+.TextosV{
+    line-height: 2;
+    padding: 0 0 5% 3%;
+    text-align: justify;
+}
+#TituloValores{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: rgb(146, 76, 76) 10px solid;
+    padding: 2%;
+    color: #fff4f4;
+    background-color: #b37373;
+    align-items: center; 
+    font-size: 30px;
+}
+/*Fin pagina sobre nosotros*/
 /*Pagina NOTICIAS*/
 .contenedorN{
     display: flex;
