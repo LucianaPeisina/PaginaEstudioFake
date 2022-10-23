@@ -341,7 +341,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(228, 228, 228, 0.418) 0%, #fff 100%);
+  background: linear-gradient(90deg, beige 0%, beige 100%);
   cursor: pointer;
   z-index: 8;
 }
