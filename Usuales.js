@@ -33,7 +33,7 @@ let Pfooter=`
     <h2 class="Oficina"> NUESTRA OFICINA </h2>
     <p class="Text-oficinas"> Talcahuano 123</p>
     <p class="Text-oficinas"> CABA</p>
-    <h2 class="Oficina"> EMAIL: </h2>
+    <h2 class="Oficina"> EMAIL </h2>
     <p class="Text-oficinas"> consulta@estudiofake.com </p>
 </div>
 <div class="redesFooter">
