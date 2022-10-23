@@ -22,35 +22,50 @@
 
     <main id="Index">
         <div class="Sliders">
-            <div class="contenedorI active">
-                <div class="slide"> 
-                    <div class="slideproject"> 
-                        <p> Le ayudaremos a tramitar lo necesario para su jubilación.</p>
-                        <br>
-                        <a href="./Contacto.html" class="BotonConsulta"> Haga su consulta aquí</a>
-                    </div>
-                </div>  
+                <div class="contenedorI active">
+                    <div class="slide"> 
+                        <div class="slideproject"> 
+                            <p> Le ayudaremos a tramitar lo necesario para su jubilación.</p>
+                            <br>
+                            <a href="./Contacto.html" class="BotonConsulta"> Haga su consulta aquí</a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="contenedorI">
+                    <div class="slide"> 
+                        <div class="slideproject"> 
+                            <p> Tiene derecho a un cálculo de reajuste de haberes justo.</p>
+                            <br>
+                            <a href="./Contacto.html" class="BotonConsulta"> Hacé tu consulta hoy</a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="contenedorI">
+                    <div class="slide"> 
+                        <div class="slideproject"> 
+                            <p> Confie en nosotros y le brindaremos un servicio de calidad. </p>
+                            <br>
+                            <a href="./Contacto.html" class="BotonConsulta"> Hacé tu consulta aquí</a>
+                        </div>
+                    </div>  
+                 </div>
+        </div> <br>
+            <div class="SeccionSNINdex">
+                <h2 id="TituloSNI" class="Servicios" > Sobre Nosotros</h2>
+                <div class="categoriasSN">
+                        <img class="ImagenesSN" src="./imagenes/oficinas.jpg" alt="Nosotros">
+                        <div class="TextosSNIndex">
+                                <p> Somos un estudio Juridico con años de trayectoria que nos preocupamos por dar una atención personalizada a cada cliente para que se sienta cómodo y seguro, nos encargamos de hacer todo lo posible para brindar un asesoriamiento completo.
+                                        <br> <br>
+                                    Brindar ayuda a nuestros clientes es la base de nuestros valores, resolver lo que se pide con eficacia y rapidez forman parte de la naturaleza de nuestro estudio juridico.
+                                    <br><br>
+                                    Es por ello que nos encargamos de superarnos día a día, estando actualizados sobre lo último en lo que derecho se refiere y contando con especialistas en cada área a las cuales nos dedicamos.
+                                </p>
+                                <a href="./Sobre Nosotros.html" id="BotonNosotros" class="BotonServicios"> Más de nuestra historia </a>
+                        </div>
+                </div>
             </div>
-            <div class="contenedorI">
-                <div class="slide"> 
-                    <div class="slideproject"> 
-                        <p> Tiene derecho a un cálculo de reajuste de haberes justo.</p>
-                        <br>
-                        <a href="./Contacto.html" class="BotonConsulta"> Hacé tu consulta hoy</a>
-                    </div>
-                </div>  
-            </div>
-            <div class="contenedorI">
-                <div class="slide"> 
-                    <div class="slideproject"> 
-                        <p> Confie en nosotros y le brindaremos un servicio de calidad. </p>
-                        <br>
-                        <a href="./Contacto.html" class="BotonConsulta"> Hacé tu consulta aquí</a>
-                    </div>
-                </div>  
-            </div>
-            </div>
-            <div class="acordeones">
+        <div class="acordeones">
             <h2 class="Servicios">Servicios </h2>
             <button class="acordeon">Asesoramiento Previsional</button>
             <div class="contenido">
@@ -115,12 +130,35 @@
                     <a href="./Servicios.html" class="BotonServicios"> Saber más</a>
                     <a href="./Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
                 </div>
-            </div>
+           </div> <br>
+        </div>  
+        <div class="NovedadesIndexDiv">
+                <h2 id="TituloNIndex" class="Servicios"> Últimas Novedades</h2> 
+                <div  id="appN" class="NoticiasIndex"> 
+                    <button class="pre-btn"> <img src="./imagenes/flecha-derecha" alt="flecha izquierda"></button>
+                    <button class="nxt-btn"><img src="./imagenes/flecha-derecha"  alt="flecha derecha"></button>
+                    <div class="contenedorIndex">
+                        <div v-for="noticias of Novedades" class="tarjetaIndex">
+                            <img :src="noticias.imagen" alt="noticias.Titulo">
+                            <div class="cuerpo">
+                                <h3 id="H3Noticia"> {{noticias.Tema}}</h2>
+                                <br>
+                                <p id="TituloNoticia">{{noticias.Titulo}}</p>
+                                <br>
+                                <p id="DescripcionN">{{noticias.Descripcion}}</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <a href="./Noticias.html" id="BotonNoticias" class="BotonServicios"> Leer más  </a>
+        </div>
+
     </main>
      
     <footer id="FooterP">
-      <!-- EN elJS-->
+       
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./Usuales.js"></script>
      <script defer src="navegacion.js"></script>
 </body>

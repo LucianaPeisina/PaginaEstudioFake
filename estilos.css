@@ -66,24 +66,74 @@ main{
 
 }
 
+/*footer*/
 footer{
     width: 100%;
-    justify-content: center;
     background-color: rgba(165, 42, 42, 0.521);
-    font-size: larger;
-    text-align: center;
+}
+#FooterP .red{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+#FooterP .red .logo figure{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:  #2b1f1f ;
 }
 
 .logo-footer{
-        margin: 1vw;
-        width: 5em;
+    align-items: center;
+    width: 45%;
+    height: 60%;
 }
 
+#FooterP .red  h2{
+    color: rgb(70, 29, 29);
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration:  underline;
+}
+.Text-oficinas{
+    color: #2b1f1f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 .Redes .RSS {
+    display: inline-block;
     text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #773232;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.Redes .RSS:hover{
+    color: #b45e5e;
 }
 
-/*Index pagina*/
+#FooterP .Derechos{
+    background-color: #773b3b;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#FooterP .Derechos small{
+    font-size: 15px;
+}
+/* FIN DE  FOOTER*/
 
 /*Index pagina*/
 
@@ -234,7 +284,105 @@ footer{
     background-color: #523d3d;
 }
 
-/*Pagina Index*/
+/*Seccion sobre nosotros*/
+.SeccionSNINdex{
+    border: rgb(211, 101, 101) 10px double;
+    padding-top: 10px;
+}
+
+.contenidoSNIndex{
+  text-align: justify;
+    width: 100%;
+    padding:  0 0 10% 10%;
+}
+
+
+#BotonNosotros{
+    text-align: center;
+    margin-left: 10%;
+}
+
+.TextosSNIndex{
+    line-height: 2;
+    padding: 0 0% 1% 3%;
+    text-align: justify;
+}
+/*fin de sobrenosotros*/
+/* sliders noticias*/
+
+.NoticiasIndex{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+.contenedorIndex{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+#BotonNoticias{
+        display: inline-block;
+        align-items: center;
+        margin: 0 0 10px 45%;
+
+}
+
+.contenedorIndex::-webkit-scrollbar{
+    display: none;
+}
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(228, 228, 228, 0.418) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+
+.tarjetaIndex{
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+    border: 1px solid rgb(167, 167, 165);
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.tarjetaIndex:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+/*sliders noticias*/
+/*FIN Pagina Index*/
 /*Pagina servicios*/
 .TituloS{
     text-align: center;

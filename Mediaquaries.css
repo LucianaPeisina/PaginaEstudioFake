@@ -1,4 +1,4 @@
-@media screen and (max-width:480px){
+@media screen and (max-width:767px){
   .headerC .boton{
     display: block;
     cursor: pointer;
@@ -16,7 +16,7 @@
   }
   .headerC .navC.activo{
     pointer-events: auto;
-    height: 35vh;
+    height: 45vh;
     
   }
   .headerC .navC-lista{
@@ -25,6 +25,16 @@
   .headerC .navC-item{
     margin: 1rem 0;
   }
+  /*INICIO DE FOOTER*/
+
+    #FooterP .red{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap:30px;
+      padding: 35px 0px;
+    }
+  
+  /*FIN DE FOOTER*/
   
   /*COntactate*/
   .Formulario{
@@ -114,6 +124,21 @@
       text-decoration: none;
   }
   /*Fin sliders*/  
+  /*SECCION SOBRE NOSOTROS*/
+   #BotonNosotros{
+    margin: 0 20% 10px 20%;
+    width: 60%;
+   }
+  /* FIN SECCION SOBRE NOSOTRPS*/
+
+  /*SECCION NOTICIAS*/
+  #BotonNoticias{
+    margin: 0 30% 10px 30%;
+
+}
+
+
+  /*FIN SECCION NOTICIAS*/
   /* FIN INDEX*/
   /*SERVICIOS*/
   .categorias{
@@ -205,6 +230,7 @@ padding: 0%;
 
 
 }
+/*FIN PAGINA NOTICIAS*/
 @media screen and (min-width:768px) and (max-width: 1023px){ 
  .link{
   font-size: 56%;

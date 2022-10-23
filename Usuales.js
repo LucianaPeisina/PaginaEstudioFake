@@ -23,8 +23,21 @@ document.querySelector(".headerC").innerHTML = Bnav;
 //Footer
 let Pfooter=`    
 <div class="red"> 
-<img src="./imagenes/fake.jpg" alt="logo" class="logo-footer"> 
-<p id="Estudio"> Estudio Juridico Fake</p> <br>
+<div class="logo">
+    <figure>
+        <img src="./imagenes/fake.jpg" alt="logo" class="logo-footer"> 
+        <p id="Estudio"> Estudio Juridico Fake</p> 
+    </figure>
+</div>
+<div class="oficinas"> 
+    <h2 class="Oficina"> NUESTRA OFICINA </h2>
+    <p class="Text-oficinas"> Talcahuano 123</p>
+    <p class="Text-oficinas"> CABA</p>
+    <h2 class="Oficina"> EMAIL: </h2>
+    <p class="Text-oficinas"> consulta@estudiofake.com </p>
+</div>
+<div class="redesFooter">
+    <h2 class="Oficina">SIGUENOS</h2>
     <nav class="Redes"> 
         <a class="RSS" target="_blank" href="https://linkedin.com">
            <i class="fa-brands fa-linkedin"alt="linkedin" title="Linkedin"></i> 
@@ -38,19 +51,13 @@ let Pfooter=`
         </a>
         <a class="RSS" target="_blank" href="https://youtube.com">
            <i class="fa-brands fa-youtube"alt="youtube" title="Youtube"> </i>
-    </a>
+        </a>
    </nav>
 </div>
-<!-- 
-<div class="oficinas"> 
-<h2 class="Oficina"> Nuestra oficina: </h2><br>
-<p class="Text-oficinas"> Talcahuano 123</p><br>
-<p class="Text-Oficinas"> CABA</p>
 </div>
-<div class="llamanos">
-<h5> Contactanos</h5>
-<p class="Text-Oficinas"> consultas@fake </p>
-</div>--> 
+<div class="Derechos">
+<small>&copy; 2022 <b>Grupo Fake</b> - Todos los Derechos Reservados.</small>
+</div>
 ` ;
 
 document.getElementById("FooterP").innerHTML= Pfooter;
