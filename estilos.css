@@ -520,12 +520,12 @@ textarea,
 
 .formulario__mensaje {
 	height: 45px;
-	line-height: 45px;
 	background: #F66060;
     width: 80%;
-	padding: 0 15px;
+	padding: 15px 15px;
 	border-radius: 3px;
 	display: none;
+    font-weight: bold;
 }
 
 .formulario__mensaje-activo {

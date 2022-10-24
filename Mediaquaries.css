@@ -50,8 +50,17 @@
      }
 
   button.formulario__btn{
-      width: 20%;
+      width: 40%;
       height: 7vh;
+  }
+
+  .formulario__mensaje{
+    font-size: 13px;
+    padding: 0%;
+  }
+
+  .formulario__mensaje-activo {
+    display: inline-block;
   }
   /*Index*/
   .acordeon{
