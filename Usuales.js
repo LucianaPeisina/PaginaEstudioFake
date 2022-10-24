@@ -25,7 +25,8 @@ let Pfooter=`
 <div class="red"> 
 <div class="logo">
     <figure>
-        <img src="./imagenes/fake.jpg" alt="logo" class="logo-footer"> 
+    <a class="logo" href="index.html">
+    <img src="./imagenes/fake.jpg" alt="Logo Fake" class="logo-footer"></a>
         <p id="Estudio"> Estudio Juridico Fake</p> 
     </figure>
 </div>
@@ -37,7 +38,7 @@ let Pfooter=`
     <p class="Text-oficinas"> consulta@estudiofake.com </p>
 </div>
 <div class="redesFooter">
-    <h2 class="Oficina">SIGUENOS</h2>
+    <h2 class="Oficina">SEGUINOS</h2>
     <nav class="Redes"> 
         <a class="RSS" target="_blank" href="https://linkedin.com">
            <i class="fa-brands fa-linkedin"alt="linkedin" title="Linkedin"></i> 
