@@ -4,17 +4,16 @@
 let Bnav=` 
 
 <h1 class="h1"><a class="logo" href="index.html">
-        <img src="/PaginaEstudioFake/imagenes/fake.jpg" alt="Logo Fake" class="fake"></a></h1>
+        <img src="imagenes/fake.jpg" alt="Logo Fake" class="fake"></a></h1>
 
 <button class="boton"> <i class="fa-solid fa-bars"></i></button>
 <nav id="seleccionar" class="navC"> 
     <ul class="navC-lista"> 
-        <li class="navC-item"><a class="link" href="/PaginaEstudioFake/index.html"> Inicio </a></li>
-        <li class="navC-item"><a class="link" href="/PaginaEstudioFake/Servicios.html"> Servicios</a></li>
-        <li class="navC-item"><a class="link" href="/PaginaEstudioFake/Sobre Nosotros.html">Sobre Nosotros</a> </li>
-        <li class="navC-item"> <a class= "link" href="/PaginaEstudioFake/Noticias.html">Noticias</a></li>
-        <li class="navC-item"><a class= "link" href="/PaginaEstudioFake/Contacto.html">Contactanos</a></li>
-        <li class="navC-item"><a class="link" href="/Frontend/crud.html"> Edición </a></li>
+        <li class="navC-item"><a class="link" href="index.html"> Inicio </a></li>
+        <li class="navC-item"><a class="link" href="Servicios.html"> Servicios</a></li>
+        <li class="navC-item"><a class="link" href="Sobre Nosotros.html">Sobre Nosotros</a> </li>
+        <li class="navC-item"> <a class= "link" href="Noticias.html">Noticias</a></li>
+        <li class="navC-item"><a class= "link" href="Contacto.html">Contactanos</a></li>
     </ul>
 </nav> 
 `;
@@ -27,7 +26,7 @@ let Pfooter=`
 <div class="logo">
     <figure>
     <a class="logo" href="index.html">
-    <img src="/PaginaEstudioFake/imagenes/fake.jpg" alt="Logo Fake" class="logo-footer"></a>
+    <img src="imagenes/fake.jpg" alt="Logo Fake" class="logo-footer"></a>
         <p id="Estudio"> Estudio Juridico Fake</p> 
     </figure>
 </div>
@@ -64,13 +63,17 @@ let Pfooter=`
 
 document.getElementById("FooterP").innerHTML= Pfooter;
 
+document.getElementById("FooterP").innerHTML= Pfooter;
+
 //API CONSUMIR
+
+if (document.getElementById("appN")) {
 const { createApp } = Vue
 
 const appN=createApp({
   data() {
     return {
-      url: 'http://localhost:5000/noticias',
+      url: 'http://lucianahpeisina.pythonanywhere.com/noticias',
       NovedadesAll: [],
       Novedades: [],
       Temas: [],
@@ -102,10 +105,9 @@ const appN=createApp({
     async created (){
          await this.fetchData(this.url) 
          this.cargarListasDesplegables()
-      }
+      },
 
     }).mount('#appN')
     
     
-    
-
+}

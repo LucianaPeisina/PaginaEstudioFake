@@ -35,15 +35,16 @@
                     </p><br>
                 </div>
                 
-                <div class="contenedorN">
+                <div class="contenedorN" id="tblDatos">
                     <div v-for="noticias of Novedades" class="tarjeta">
                         <img :src="noticias.imagen" alt="noticias.Titulo">
                         <div class="cuerpo">
-                            <h3 id="H3Noticia"> {{noticias.tema}}</h2>
+                            <h3 id="H3Noticia"> {{noticias.tema}}</h3>
                             <br>
-                            <p id="TituloNoticia">{{noticias.titulo}}</p>
+                            <h4 id="TituloNoticia">{{noticias.titulo}}</h4>
                             <br>
-                            <p id="DescripcionN">{{noticias.descripción}}</p>
+                            <p id="DescripcionN">{{noticias.resumen}}</p>
+                            <a :href="'Lectura.html?id='+noticias.id+'&tema='+noticias.tema+'&titulo='+noticias.titulo+'&descripción='+noticias.descripción+'&imagen='+noticias.imagen" class="btn btn-primary">Leer Más</a> 
                         </div>
                     </div>   
                 </div>
@@ -55,8 +56,9 @@
           <!-- EN el JS-->
         </footer>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="/PaginaEstudioFake/jsF/Usuales.js"></script>
-        <script defer src="/PaginaEstudioFake/jsF/navegacion.js"></script>
+        <script src="/jsF/Usuales.js"></script>
+        
+        <script defer src="/jsF/navegacion.js"></script>
 </body>
     
 </html>

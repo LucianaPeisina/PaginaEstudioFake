@@ -27,7 +27,7 @@
                         <div class="slideproject"> 
                             <p> Le ayudaremos a tramitar lo necesario para su jubilación.</p>
                             <br>
-                            <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsulta"> Haga su consulta aquí</a>
+                            <a href="Contacto.html" class="BotonConsulta"> Haga su consulta aquí</a>
                         </div>
                     </div>  
                 </div>
@@ -36,7 +36,7 @@
                         <div class="slideproject"> 
                             <p> Tiene derecho a un cálculo de reajuste de haberes justo.</p>
                             <br>
-                            <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsulta"> Hacé tu consulta hoy</a>
+                            <a href="Contacto.html" class="BotonConsulta"> Hacé tu consulta hoy</a>
                         </div>
                     </div>  
                 </div>
@@ -45,7 +45,7 @@
                         <div class="slideproject"> 
                             <p> Confie en nosotros y le brindaremos un servicio de calidad. </p>
                             <br>
-                            <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsulta"> Hacé tu consulta aquí</a>
+                            <a href="Contacto.html" class="BotonConsulta"> Hacé tu consulta aquí</a>
                         </div>
                     </div>  
                  </div>
@@ -62,7 +62,7 @@
                                     Es por ello que nos encargamos de superarnos día a día, estando actualizados sobre lo último en lo que derecho se refiere y contando con especialistas en cada área a las cuales nos dedicamos.
                                 </p> 
                                 <br>
-                                <a href="/PaginaEstudioFake/Sobre Nosotros.html" id="BotonNosotros" class="BotonServicios"> Más de nuestra historia </a>
+                                <a href="Sobre Nosotros.html" id="BotonNosotros" class="BotonServicios"> Más de nuestra historia </a>
                         </div>
                 </div>
             </div>
@@ -80,8 +80,8 @@
                 </ul>
                 <br>
                 <div class="botonesS"> 
-                    <a href="/PaginaEstudioFake/Servicios.html" class="BotonServicios"> Quiero saber más</a>
-                    <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
+                    <a href="Servicios.html" class="BotonServicios"> Quiero saber más</a>
+                    <a href="Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
                 </div>
             </div>
             <button class="acordeon">Reajuste de Haberes</button>
@@ -96,8 +96,8 @@
                 </ul>
                 <br>
                 <div class="botonesS"> 
-                    <a href="/PaginaEstudioFake/Servicios.html" class="BotonServicios"> Quiero saber más</a>
-                    <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
+                    <a href="Servicios.html" class="BotonServicios"> Quiero saber más</a>
+                    <a href="Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
                 </div>
             </div>
             <button class="acordeon">Sucesiones</button>
@@ -112,8 +112,8 @@
                 </ul>
                 <br>
                 <div class="botonesS"> 
-                    <a href="/PaginaEstudioFake/Servicios.html" class="BotonServicios"> Quiero saber más</a>
-                    <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
+                    <a href="Servicios.html" class="BotonServicios"> Quiero saber más</a>
+                    <a href="Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
                 </div>
             </div>
             <button class="acordeon">Jubilación</button>
@@ -128,30 +128,30 @@
                 </ul>
                 <br>
                 <div class="botonesS"> 
-                    <a href="/PaginaEstudioFake/Servicios.html" class="BotonServicios"> Quiero saber más</a>
-                    <a href="/PaginaEstudioFake/Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
+                    <a href="Servicios.html" class="BotonServicios"> Quiero saber más</a>
+                    <a href="Contacto.html" class="BotonConsultor"> Enviar Consulta</a>
                 </div>
            </div> <br>
         </div>  
         <div class="NovedadesIndexDiv">
-                <h2 id="TituloNIndex" class="Servicios"> Últimas Novedades</h2> 
-                <div  id="appN" class="NoticiasIndex"> 
-                    <button class="pre-btn"> <img src="./imagenes/flecha-derecha" alt="flecha izquierda"></button>
-                    <button class="nxt-btn"><img src="./imagenes/flecha-derecha"  alt="flecha derecha"></button>
-                    <div class="contenedorIndex">
-                        <div v-for="noticias of Novedades" class="tarjetaIndex">
-                            <img :src="noticias.imagen" alt="noticias.Titulo">
-                            <div class="cuerpoI">
-                                <h3 id="H3Noticia"> {{noticias.tema}}</h2>
-                                <br>
-                                <p id="TituloNoticia">{{noticias.titulo}}</p>
-                                <br>
-                                <p id="DescripcionN">{{noticias.descripción}}</p>
-                            </div>
-                        </div>   
-                    </div>
+            <h2 id="TituloNIndex" class="Servicios"> Últimas Novedades</h2> 
+            <div  id="appN" class="NoticiasIndex"> 
+                <button class="pre-btn"> <img src="./imagenes/flecha-derecha" alt="flecha izquierda"></button>
+                <button class="nxt-btn"><img src="./imagenes/flecha-derecha"  alt="flecha derecha"></button>
+                <div class="contenedorIndex"> 
+                    <div v-for= "noticias of Novedades" class="tarjetaIndex">
+                        <img :src="noticias.imagen" alt="noticias.Titulo">
+                        <div class="cuerpoI">
+                            <h3 id="H3Noticia"> {{noticias.tema}}</h3>
+                            <br>
+                            <h4 id="TituloNoticia">{{noticias.titulo}}</h4>
+                            <br>
+                            <p id="DescripcionN">{{noticias.resumen}}</p>
+                            <a :href="'Lectura.html?id='+noticias.id+'&tema='+noticias.tema+'&titulo='+noticias.titulo+'&descripción='+noticias.descripción+'&imagen='+noticias.imagen" class="btn btn-primary">Leer Más</a> 
+                        </div>
+                    </div>   
                 </div>
-                <a href="/PaginaEstudioFake/Noticias.html" id="BotonNoticias" class="BotonServicios"> Leer más  </a>
+                <a href="Noticias.html" id="BotonNoticias" class="BotonServicios"> Leer más  </a>
         </div>
 
     </main>
@@ -160,7 +160,8 @@
        
     </footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="/PaginaEstudioFake/jsF/Usuales.js"></script>
-    <script defer src="/PaginaEstudioFake/jsF/navegacion.js"></script>
+    <script src="/jsF/Usuales.js"></script>
+    
+    <script defer src="/jsF/navegacion.js"></script>
 </body>
 </html>

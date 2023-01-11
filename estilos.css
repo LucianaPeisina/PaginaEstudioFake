@@ -11,7 +11,7 @@ body{
 /*HEADER */
 
 .headerC{
-    background-color: rgba(100, 22, 22, 0.986);
+    background-color: #1c2e4e;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -19,18 +19,18 @@ body{
     align-items: center;
 }
 .navC .link{
-    color: rgb(248, 185, 185);;
+    color: rgb(255, 255, 255);;
     text-decoration: none;
 }
 .navC .link:hover{
-    color: rgb(224, 150, 137);
-    background-color: #8d3d3d;
+    color: rgb(209, 197, 195);
+    background-color: #130d20;
 }
 
 .headerC .boton{
     background: none;
     border: none;
-    color: rgb(248, 185, 185);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 200%;
     display: none;
@@ -55,14 +55,14 @@ body{
     font-size: 18px;
     margin: 0 3vw;
     text-transform: uppercase;
-    color: rgb(248, 185, 185);
+    color: rgb(255, 255, 255);
 }
 
-/* HEADER*/
+/* FIN  HEADER*/
 
 
 main{
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     width: 100%;
 
 }
@@ -70,7 +70,7 @@ main{
 /*footer*/
 footer{
     width: 100%;
-    background-color: rgba(165, 42, 42, 0.521);
+    background-color: #1c2e4e;
 }
 #FooterP .red{
     width: 100%;
@@ -82,13 +82,15 @@ footer{
     padding: 45px 0px;
 }
 
-#FooterP .red .logo figure{
+#FooterP .red .logo figure {
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    color:  #2b1f1f ;
+    color:  #ffffff ;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .logo-footer{
@@ -97,14 +99,20 @@ footer{
     height: 60%;
 }
 
+#FooterP .red .logo figure #Estudio{
+    color: white;
+
+}
+
 #FooterP .red  h2{
-    color: rgb(70, 29, 29);
+    color: #ff2424;
     margin-bottom: 10px;
     font-size: 20px;
     text-decoration:  underline;
+    font-weight: bolder ;
 }
 .Text-oficinas{
-    color: #2b1f1f;
+    color: #ffffff;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -116,16 +124,16 @@ footer{
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: #773232;
+    background-color: #ff2424;
     text-align: center;
     transition: all 300ms ease;
 }
 .Redes .RSS:hover{
-    color: #b45e5e;
+    color: #5f0303;
 }
 
 #FooterP .Derechos{
-    background-color: #773b3b;
+    background-color: #ff2424;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -145,7 +153,7 @@ footer{
     padding-bottom: 5vh;
 } 
 #Index .contenedorI .slide .slideproject  p{
-        font-size: 5vw;
+        font-size: 4vw;
         color: #272424;
         font-family: sans-serif;
         width: 50%;
@@ -154,18 +162,18 @@ footer{
 #Index .contenedorI .slide .slideproject .BotonConsulta{
   
     display: inline-block;
-    background: #5f3a3a;
+    background: #1c2e4e;
     color: #ffffff;
     font-size: 2vw;
     margin-left: 2vw;
     padding: 4vh 3vw;
     border-radius: 5vw;
-    border: 2% solid #5f3a3a;
+    border: 2% solid #1c2e4e;
     font-family: sans-serif;
     text-decoration: none;
 }
 #Index .contenedorI .slide .slideproject .BotonConsulta:hover{
-    background: #a16e6e;
+    background: #5a80c0;
     border: 2% solid #b88d8d;
     color: #ffffff;
 }
@@ -212,16 +220,19 @@ footer{
     }
     }
 
+
+/*  SERVICIOS */
+
 .Servicios{
     font-family: 'Roboto Condensed', sans-serif;    
     text-align: center;
-    color: #5c3a3a;
+    color: #1c2e4e;
     font-size: 300%;
 }
 .acordeon{
     font-weight: bolder;
-    background-color: beige;
-    color: rgb(90, 62, 62);
+    background-color: rgb(255, 255, 255);
+    color: #1c2e4e;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -233,12 +244,13 @@ footer{
   }
   
   .active, .acordeon:hover {
-    background-color: rgb(218, 136, 136);
+    background-color: #1c2e4e;
+    color: white;
   }
   
   .acordeon:after {
     content: '\002B';
-    color: rgb(105, 62, 62);
+    color: #ff2424;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -251,7 +263,7 @@ footer{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 30px;
     padding: 0 18px;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     margin-left: 2%;
     max-height: 0;
     overflow: hidden;
@@ -261,7 +273,7 @@ footer{
    margin: 2%; 
 }
 .BotonServicios{
-    background: #be7b7b;
+    background: #1c2e4e;
     color: #ffffff;
     font-size: 30px;
     padding: 1% 1vw;
@@ -270,10 +282,10 @@ footer{
     text-decoration: none;
 }
 .BotonServicios:hover{
-    background-color: #723c3c;;
+    background-color: #314e80;
 }
 .BotonConsultor {
-    background: #855757;
+    background: #f83636;
     color: #ffffff;
     font-size: 30px;
     padding: 1% 1vw;
@@ -282,12 +294,12 @@ footer{
     text-decoration: none;
 }
 .BotonConsultor:hover{
-    background-color: #523d3d;
+    background-color: #fa5c5c;
 }
 
 /*Seccion sobre nosotros*/
 .SeccionSNINdex{
-    border: rgb(211, 101, 101) 10px double;
+    border: #f83636 10px double;
     padding-top: 10px;
 }
 
@@ -342,29 +354,30 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, beige 0%, beige 100%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
   cursor: pointer;
   z-index: 8;
 }
 .pre-btn {
     left: 0;
     transform: rotate(180deg);
-  }
+}
   
-  .nxt-btn {
+.nxt-btn {
     right: 0;
-  }
+}
   
-  .pre-btn img,
-  .nxt-btn img {
+.pre-btn img,
+.nxt-btn img {
     opacity: 0.2;
-  }
+    width: 100px;
+}
   
-  .pre-btn:hover img,
-  .nxt-btn:hover img {
+.pre-btn:hover img,
+.nxt-btn:hover img {
     opacity: 1;
-  }
-  .cuerpoI{
+}
+.cuerpoI{
     text-align: center;
     padding: 15px;
     font-size:smaller;
@@ -377,9 +390,10 @@ footer{
     width: 250px;
     height: 450px;
     margin-right: 40px;
-    border: 1px solid beige;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 6px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px rgba(250, 235, 235, 0.2);
     cursor: default;
     transition: all 400ms ease;
 }
@@ -388,16 +402,62 @@ footer{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
 }
+
+.tarjetaIndex img{
+    height: 210px;
+
+
+}
+.tarjetaIndex .cuerpoI p{
+	color: #1c2e4e;
+	font-size: 13px;
+
+}
+
+.tarjetaIndex .cuerpoI h3{
+    margin-bottom: 5px;
+	color: #1c2e4e;
+    font-size: small;
+
+}
+
+.tarjetaIndex .cuerpoI h4{
+    color: #f63636;
+}
+
+.tarjetaIndex .cuerpoI a{
+    display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #ff3636;
+	border: 1px solid #f83636;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    text-align: end;
+
+
+
+}
+
+.tarjetaIndex .cuerpoI a:hover{
+    background: #ff2424;
+	color: #fff;
+}
+
 /*sliders noticias*/
 /*FIN Pagina Index*/
+
+
 /*Pagina servicios*/
 .TituloS{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    border: rgb(189, 78, 78) 10px solid;
+    border: #e02828 10px solid;
     padding: 2%;
     color: #fff4f4;
-    background-color: #c76f6f;
+    background-color: #ff3434;
     align-items: center;
     font-size: 40px;
 
@@ -406,11 +466,21 @@ footer{
     padding: 4%;
     display: flex;
     border-style:groove;
-    
 }
+
+
 .categorias:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
+}
+
+.categorias h2{
+    color: #ff3434;
+
+}
+
+.categorias p{
+    color: #1c2e4e;
 }
 .ImagenesS{
     width: 40%;
@@ -423,7 +493,7 @@ footer{
 
 
 .BotonPS{
-    background: #855757;
+    background: #1c2e4e;
     color: #ffffff;
     margin-top: 10%;
     font-size: 20px;
@@ -435,17 +505,28 @@ footer{
 }
 
 .BotonPS:hover{
-    background: #684f2f;
+    background: #48679e;
     color: #ffffff;
 }
 /*FIn pagina servicios*/
 
-/*Pagina contactate*/
+/*Pagina CONTACTANOS */
 .container{
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
+    
+
+}
+
+.container label, p{
+    color: #1c2e4e;
+    font-weight: bold;
+}
+
+.container h2, h3{
+    color: #ff3434;
 
 }
 
@@ -483,9 +564,10 @@ textarea,
     font-weight: 400;
     padding: 8px 10px;
     border-radius: 5px;
-    border: 1.2px solid #191a1f;
+    border: 1.2px solid #1c2e4e;
     margin-top: 5px;
 }
+
 /* prueba de validacion*/
 .formulario__input-error {
 	font-size: 16px;
@@ -549,7 +631,7 @@ textarea,
     margin: 3%;
     margin-left: 0%;
 	line-height: 45px;
-	background: rgb(83, 40, 40);
+	background: #ff3434;
 	color: #fff;
     font-size: 70%;
 	font-weight: bold;
@@ -560,7 +642,7 @@ textarea,
 }
 
 .formulario__btn:hover {
-	background-color:  rgb(119, 49, 49);
+	background-color:  #ff6767;
 }
 
 .formulario__mensaje-exito {
@@ -582,19 +664,16 @@ textarea,
 	color: #bb2929;
 }
 
-
-
-
-
 /*Pagina Contactate*/
+
 /* Pagina sobre nosotros*/
 .TituloSN{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    border: rgb(146, 76, 76) 10px solid;
+    border: #ff3434 10px solid;
     padding: 2%;
-    color: #fff4f4;
-    background-color: #b37373;
+    color: #fdfdfd;
+    background-color: #ff3434;
     align-items: center;
 
 }
@@ -629,65 +708,107 @@ textarea,
 #TituloValores{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    border: rgb(146, 76, 76) 10px solid;
+    border: #ff3434 10px solid;
     padding: 2%;
-    color: #fff4f4;
-    background-color: #b37373;
+    color: #ffffff;
+    background-color: #ff3434;
     align-items: center; 
     font-size: 30px;
 }
 /*Fin pagina sobre nosotros*/
 /*Pagina NOTICIAS*/
 .contenedorN{
-    display: flex;
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
     flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-    margin-left: 30px;
 }
 #HNoti{
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(250, 175, 165);
-    color: rgb(88, 43, 39);
+    background-color: #ff3434;
+    color: #ffffff;
     font-size: 35px;
     text-align: center;
-    border: #8d3d3d 10px solid;
+    border: #b32020 10px solid;
 }
 .tarjeta{
     overflow: hidden;
-    border: 1px solid rgb(167, 167, 165);
-    margin: 10px;
-    border-radius: 6px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    width: 300px;
-    cursor: default;
-    transition: all 400ms ease;
-    background-color:rgb(229, 229, 183);
+	width: 300px;
+    height: 550px;
+	margin: 10px;
+	border-radius: 6px;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
 }
 .tarjeta:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
 }
-.cuerpo{
-    padding: 10px;
-    font-size:smaller;
-    margin-bottom: 50px;
+
+.tarjeta img{
+	width: 100%;
+	height: 210px;
     
 }
-img{
-    width: 100%;
-    height: 50%;
+.tarjeta .cuerpo{
+	padding: 15px;
+	text-align: center;
     
 }
+
+.tarjeta .cuerpo h3{
+    margin-bottom: 15px;
+	color: #1c2e4e;
+    font-size: small;
+}
+
+.tarjeta .cuerpo h4{
+    color: #ff3434;
+}
+
+.tarjeta .cuerpo p{
+    line-height: 1.8;
+	color: #1c2e4e;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.cuerpo a{
+    display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #ff3434;
+	border: 1px solid #ff3434;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    text-align: end;
+}
+
+.cuerpo a:hover{
+    background: #ff3434;
+	color: #fff;
+}
+
+#TituloNoticia{
+    font-size: 16px ;
+    font-weight: bold;
+}
+
+
 .Novedades{
     display: flex;
 }
 
 .filtro{
     width: 30%;
-    background-color: #b66060;
+    background-color: #ff3434;
     padding-left: 2%;
-    border:rgb(119, 49, 49) 7px outset;
+    border:rgb(146, 43, 43) 7px outset;
 
 
 }
@@ -706,7 +827,7 @@ img{
     margin: 3%;
     margin-left: 0%;
 	line-height: 45px;
-	background: rgb(83, 40, 40);
+	background: #4264a0;
 	color: #fff;
 	font-weight: bold;
 	border: none;
@@ -716,33 +837,60 @@ img{
 }
 
 #buscarN:hover{
-    background:rgb(165, 67, 50);
+    background:#1c2e4e;
 }
-#H3Noticia{
- font-size: small;
-}
-#TituloNoticia{
-    font-size: 16px ;
-    font-weight: bold;
-}
+/* PAGINA LECTURA */
 
-#DescripcionN{
-    line-height: 1.5;
-}
-/* fin pagina noticias */
-
-/* PAGINA EDICION*/
-
-.contenedorCrud{
-    margin: 0% 2% 3% 2%;
-}
-
-.contenedorCrud .botonesCrud {
+#noticia-list{
+    width: 1124px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
-    font-size: 20px;
 }
-.mb-3 textarea{
-    resize: none;
+#noticia-list article{
+    display: flex;
+    flex-direction: column;
 }
 
-/* FIN PAGINA EDICION*/
+#noticia-list span{
+    font-size: 15px;
+    font-family: LibreFranklin-Bold, sans-serif;
+    color: #FF3434;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#noticia-list h1{
+    color: #1c2e4e;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 38px;
+    margin: 0px 50px;
+
+}
+
+#noticia-list img{
+    width: 80%;
+    height: 150px;
+    margin: 0px 50px;
+}
+
+#noticia-list p{
+    max-width: 750px;
+    font-size: 18px;
+    font-family: LibreFranklin-Regular, sans-serif;
+    color: rgb(80, 80, 80);
+    line-height: 30px;
+    align-items: center;
+    text-align: justify;
+    margin: 0px 50px;
+}
+
+#PNoti .link{
+    color: white;
+    text-decoration: none;
+}
+/* FIN PAGINA DE LECTURA */  
