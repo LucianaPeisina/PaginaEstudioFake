@@ -9,11 +9,19 @@ let Bnav=`
 <button class="boton"> <i class="fa-solid fa-bars"></i></button>
 <nav id="seleccionar" class="navC"> 
     <ul class="navC-lista"> 
+<<<<<<< HEAD
         <li class="navC-item"><a class="link" href="index.html"> Inicio </a></li>
         <li class="navC-item"><a class="link" href="Servicios.html"> Servicios</a></li>
         <li class="navC-item"><a class="link" href="Sobre Nosotros.html">Sobre Nosotros</a> </li>
         <li class="navC-item"> <a class= "link" href="Noticias.html">Noticias</a></li>
         <li class="navC-item"><a class= "link" href="Contacto.html">Contactanos</a></li>
+=======
+        <li class="navC-item"><a class="link" href="/PaginaEstudioFake/index.html"> Inicio </a></li>
+        <li class="navC-item"><a class="link" href="/PaginaEstudioFake/Servicios.html"> Servicios</a></li>
+        <li class="navC-item"><a class="link" href="/PaginaEstudioFake/Sobre Nosotros.html">Sobre Nosotros</a> </li>
+        <li class="navC-item"> <a class= "link" href="/PaginaEstudioFake/Noticias.html">Noticias</a></li>
+        <li class="navC-item"><a class= "link" href="/PaginaEstudioFake/Contacto.html">Contactanos</a></li>
+>>>>>>> 4beaeec7852a41ed16bd6d6738667c9095df73f4
     </ul>
 </nav> 
 `;
