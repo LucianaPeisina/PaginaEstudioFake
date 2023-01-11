@@ -14,7 +14,6 @@ let Bnav=`
         <li class="navC-item"><a class="link" href="/PaginaEstudioFake/Sobre Nosotros.html">Sobre Nosotros</a> </li>
         <li class="navC-item"> <a class= "link" href="/PaginaEstudioFake/Noticias.html">Noticias</a></li>
         <li class="navC-item"><a class= "link" href="/PaginaEstudioFake/Contacto.html">Contactanos</a></li>
-        <li class="navC-item"><a class="link" href="/Frontend/crud.html"> Edición </a></li>
     </ul>
 </nav> 
 `;
