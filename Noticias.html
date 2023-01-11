@@ -34,16 +34,16 @@
                         <button class="btn btn-primary"  id="buscarN" v-on:click="filtro()">Buscar</button> 
                     </p><br>
                 </div>
-            
+                
                 <div class="contenedorN">
                     <div v-for="noticias of Novedades" class="tarjeta">
                         <img :src="noticias.imagen" alt="noticias.Titulo">
                         <div class="cuerpo">
-                            <h3 id="H3Noticia"> {{noticias.Tema}}</h2>
+                            <h3 id="H3Noticia"> {{noticias.tema}}</h2>
                             <br>
-                            <p id="TituloNoticia">{{noticias.Titulo}}</p>
+                            <p id="TituloNoticia">{{noticias.titulo}}</p>
                             <br>
-                            <p id="DescripcionN">{{noticias.Descripcion}}</p>
+                            <p id="DescripcionN">{{noticias.descripción}}</p>
                         </div>
                     </div>   
                 </div>
@@ -55,8 +55,8 @@
           <!-- EN el JS-->
         </footer>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="./Usuales.js"></script>
-        <script defer src="navegacion.js"></script>
+        <script src="/PaginaEstudioFake/jsF/Usuales.js"></script>
+        <script defer src="/PaginaEstudioFake/jsF/navegacion.js"></script>
 </body>
     
 </html>

@@ -52,7 +52,8 @@ body{
 
 
 .navC-item {
-    margin: 0 5vw;
+    font-size: 18px;
+    margin: 0 3vw;
     text-transform: uppercase;
     color: rgb(248, 185, 185);
 }
@@ -728,3 +729,20 @@ img{
 #DescripcionN{
     line-height: 1.5;
 }
+/* fin pagina noticias */
+
+/* PAGINA EDICION*/
+
+.contenedorCrud{
+    margin: 0% 2% 3% 2%;
+}
+
+.contenedorCrud .botonesCrud {
+    
+    font-size: 20px;
+}
+.mb-3 textarea{
+    resize: none;
+}
+
+/* FIN PAGINA EDICION*/
