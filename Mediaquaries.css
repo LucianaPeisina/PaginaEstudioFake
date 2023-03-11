@@ -38,7 +38,7 @@
   
   /*COntactate*/
   .Formulario{
-      background-color: beige;
+      background-color: white;
       grid-column: 1/-1;
     }
   .container .mapa{
@@ -121,14 +121,12 @@
   #Index .contenedorI .slide .slideproject .BotonConsulta{
 
       display: inline-block;
-      background: #5f3a3a;
       color: #ffffff;
       text-align: center;
       font-size: 20px;
       margin: 18%;
       padding: 4vh 3vw;
       border-radius: 5vw;
-      border: 2% solid #5f3a3a;
       font-family: sans-serif;
       text-decoration: none;
   }
