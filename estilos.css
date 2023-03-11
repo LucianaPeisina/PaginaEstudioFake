@@ -162,7 +162,7 @@ footer{
 #Index .contenedorI .slide .slideproject .BotonConsulta{
   
     display: inline-block;
-    background: #1c2e4e;
+    background: ##1c2e4e;
     color: #ffffff;
     font-size: 2vw;
     margin-left: 2vw;
@@ -512,7 +512,6 @@ footer{
 
 /*Pagina CONTACTANOS */
 .container{
-    background-color: rgb(255, 255, 255);
     width: 100%;
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
