@@ -7,7 +7,7 @@ if (document.getElementById("appDN")) {
     createApp({
         data() {
             return {
-              url: 'http://lucianahpeisina.pythonanywhere.com/noticias',
+              url: 'https://lucianapeisina.github.io/Noticias.json',
               NovedadesAll: [],
               Novedades: [],
               Temas: [],
